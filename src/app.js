@@ -14,6 +14,7 @@ const counter = (state = 0, action) => {
   }
 }
 
+// ActionCreator
 const Counter = ({value, onIncrement, onDecrement}) => (
   <div>
     <h1>{value}</h1>
@@ -22,8 +23,10 @@ const Counter = ({value, onIncrement, onDecrement}) => (
   </div>
 )
 
+// Store
 const store = createStore(counter)
 
+// Component
 const render = () => {
   ReactDOM.render(
     <Counter
